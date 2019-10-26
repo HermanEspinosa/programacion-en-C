@@ -1,0 +1,92 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main(){
+	int operacion = 0;
+	char  salir = 'n';
+	float num1 = 0, num2 = 0, resultado = 0;
+
+	while (salir == 'n')
+	{
+		cout<<"\n\nMenu de operaciones\n\n";
+		cout<<"SELECCONA UNA OPCION\n";
+		cout<<"[1] Suma\n";
+		cout<<"[2] resta\n";
+		cout<<"[3] Multiplicacion\n";
+		cout<<"[4] Division\n";
+		cout<<"[5] raiz\n";
+		cout<<"[6] Potencia\n";
+		cout<<"[7] Salir\n";
+
+
+		cin>>operacion;
+
+		switch (operacion){
+		case 1:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = num1+num2;
+			cout<<"El resultado de "<<num1<<"+"<<num2<<" es "<<resultado;
+		break;
+
+		case 2:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = num1-num2;
+			cout<<"El resultado de "<<num1<<"-"<<num2<<" es "<<resultado;
+		break;
+
+		case 3:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = num1*num2;
+			cout<<"El resultado de "<<num1<<"*"<<num2<<" es "<<resultado;
+		break;
+
+		case 4:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = num1/num2;
+			cout<<"El resultado de "<<num1<<"/"<<num2<<" es "<<resultado;
+		break;
+
+		case 5:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = pow(num1, 1/num2);
+			cout<<"El resultado de la raiz entre los numeros "<<num1<<" y "<<num2
+			<<" es "<<resultado;
+		break;
+
+		case 6:
+			cout<<"Ingresa un numero ";
+			cin>>num1;
+			cout<<"Ingresa otro numero ";
+			cin>>num2;
+			resultado = pow(num1, num2);
+			cout<<"El resultado de la potencia entre los numeros "<<num1<<" y "<<num2
+			<<" es "<<resultado;
+		break;
+
+		case 7:
+			return 0;
+		break;
+
+		default:
+			cout<<"El valor ingresado no es valido :(";
+		break;
+		}
+	}
+}
