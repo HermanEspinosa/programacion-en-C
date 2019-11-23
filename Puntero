@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int x = 10;
+	int *p = &x;
+
+
+	cout<<"El valor de x: "<<x<<"\n";
+	cout<<"La direccion de memoria de x es: "<<&x<<"\n";
+	cout<<"El valor del puntero p es: "<<p<<"\n";
+	cout<<"Lo que apunta el puntero es: "<<&p<<"\n";
+
+	system("pause");
+	return 0;
+}
